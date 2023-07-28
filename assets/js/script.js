@@ -30,7 +30,7 @@ function CurrentForecast() {
         console.log(response);
         console.log(response.list[1].dt_txt); // min temp at noon
         $("#main").removeClass("hidden");
-        
+        localStorage.setItem("recentlySearched", cityName);
         $.each(response.list, function () {
             otherDays = this.dt_txt.split(" ");
             // console.log(otherDays);
