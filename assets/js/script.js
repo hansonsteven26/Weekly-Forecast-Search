@@ -29,6 +29,8 @@ submitButton.on("click", FindCity)
 function FindCity(event) {
     event.preventDefault();
     cityName = cityInput.val();
+    $("#main").removeClass("hidden");
+    $("#lastSearchDiv").removeClass("hidden");
     url = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=imperial&appid=${apiKey}`;
     CurrentForecast();
 }

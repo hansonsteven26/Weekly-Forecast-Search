@@ -5,6 +5,8 @@ If you enter a city in the search box, you can see the forecast for the next 5 d
 
 # Screenshots
 
+
+
 # Links
 [GitHub](https://github.com/hansonsteven26/Weekly-Forecast-Search)
 [Page](https://hansonsteven26.github.io/Weekly-Forecast-Search/)
