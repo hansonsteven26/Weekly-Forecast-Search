@@ -18,51 +18,59 @@
 
 <body>
 
-    <center>
+    <section class="text-center my-5">
         <h1 id="pageTitle">5-Day Forecast</h1>
+        <h3>Temperatures are recorded at midnight</h3>
+        <h4>Hopefully the current time doesn't cause a bug. If so, there is only 4 forecasts</h4>
         <p id="inputContainer">City: <input type="text" id="cityInput"></p>
         <button id="submitButton">Submit</button>
-        <h2 id="cityName"></h2>
-    </center>
-    <main id="main" class="d-flex justify-content-center hidden">
-        <div id="iconsContainer">
+    </section>
+
+    <main id="main" class="d-flex justify-content-center">
+        <div class="container">
             <div class="row">
-                <div class="icons card col-md-5">
-                    <p class="weather" id="day1">weather</p>
-                    <div class="image"><img src="dots.png" class="imgClass" id="img1" alt=""></div>
-                    <p class="minValues" id="day1Min">Loading</p>
-                    <p class="maxValues" id="day1Max">Loa</p>
+                <div class="icons card m-2" style="width: 15rem; height: 15rem;">
+                    <div class="card-body">
+                        <h2 class="card-title" id="day1">Day</h2>
+                        <p class="card-text" id="day1Min">Weather Type with Logo</p>
+                        <p class="card-text" id="day1Max">Temperature</p>
+                    </div>
                 </div>
-                <div class="icons card col-md-5">
-                    <p class="weather" id="day2">weather</p>
-                    <div class="image"><img src="dots.png" class="imgClass" id="img2" alt=""></div>
-                    <p class="minValues" id="day2Min">Loading</p>
-                    <p class="maxValues" id="day2Max">Loa</p>
+                <div class="icons card m-2" style="width: 15rem; height: 15rem;">
+                    <div class="card-body">
+                        <h2 class="card-title" id="day2">Day</h2>
+                        <p class="card-text" id="day2Min">Weather Type with Logo</p>
+                        <p class="card-text" id="day2Max">Temperature</p>
+                    </div>
                 </div>
-                <div class="icons card col-md-5">
-                    <p class="weather" id="day3">weather</p>
-                    <div class="image"><img src="dots.png" class="imgClass" id="img3" alt=""></div>
-                    <p class="minValues" id="day3Min">Loading</p>
-                    <p class="maxValues" id="day3Max">Loa</p>
+                <div class="icons card m-2" style="width: 15rem; height: 15rem;">
+                    <div class="card-body">
+                        <h2 class="card-title" id="day3">Day</h2>
+                        <p class="card-text" id="day3Min">Weather Type with Logo</p>
+                        <p class="card-text" id="day3Max">Temperature</p>
+                    </div>
                 </div>
-                <div class="icons card col-md-5">
-                    <p class="weather" id="day4">weather</p>
-                    <div class="image"><img src="dots.png" class="imgClass" id="img4" alt=""></div>
-                    <p class="minValues" id="day4Min">Loading</p>
-                    <p class="maxValues" id="day4Max">Loa</p>
+                <div class="icons card m-2" style="width: 15rem; height: 15rem;">
+                    <div class="card-body">
+                        <h2 class="card-title" id="day4">Day</h2>
+                        <p class="card-text" id="day4Min">Weather Type with Logo</p>
+                        <p class="card-text" id="day4Max">Temperature</p>
+                    </div>
                 </div>
-                <div class="icons card col-md-5">
-                    <p class="weather" id="day5">weather</p>
-                    <div class="image"><img src="dots.png" class="imgClass" id="img5" alt=""></div>
-                    <p class="minValues" id="day5Min">Loading</p>
-                    <p class="maxValues" id="day5Max">Loa</p>
+                <div class="icons card m-2" style="width: 15rem; height: 15rem;">
+                    <div class="card-body">
+                        <h2 class="card-title" id="day5">Day</h2>
+                        <p class="card-text" id="day5Min">Weather Type with Logo</p>
+                        <p class="card-text" id="day5Max">Temperature</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="recentSearches">
-            Recent Searches
-        </div>
     </main>
+
+    <section id="recentSearches" class="text-center mt-4">
+        Recent Searches
+    </section>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
