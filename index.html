@@ -19,12 +19,12 @@
 <body>
 
     <center>
-        <h1>5-Day Forecast</h1>
+        <h1 id="pageTitle">5-Day Forecast</h1>
         <p id="inputContainer">City: <input type="text" id="cityInput"></p>
         <button id="submitButton">Submit</button>
         <h2 id="cityName"></h2>
     </center>
-    <main class="d-flex justify-content-center">
+    <main id="main" class="d-flex justify-content-center hidden">
         <div id="iconsContainer">
             <div class="row">
                 <div class="icons card col-md-5">
@@ -58,6 +58,9 @@
                     <p class="maxValues" id="day5Max">Loa</p>
                 </div>
             </div>
+        </div>
+        <div id="recentSearches">
+            Recent Searches
         </div>
     </main>
 
