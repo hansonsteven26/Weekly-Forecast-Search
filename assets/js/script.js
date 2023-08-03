@@ -54,6 +54,7 @@ function CurrentForecast() {
             let windSpeed = this.wind.speed;
 
             if (otherDays[0] != otherDaysArray[otherDaysArray.length - 1]) {
+                otherDaysArray.push(otherDays[0]);
                 tempsArray.push(temp);
                 if (weatherType == "Clouds") {
                     weatherType = "Cloudy";
