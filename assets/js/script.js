@@ -1,5 +1,5 @@
 let count = 0;
-let apiUrl = "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=";
+let apiUrl = "https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=";
 let apiKey = "0cb7223d9ba0d2ecc19d62c5046e6e35";
 let submitButton = $("#submitButton");
 let cityInput = $("#cityInput");
